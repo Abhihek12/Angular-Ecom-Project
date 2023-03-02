@@ -1,0 +1,70 @@
+<div class="card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="text-center"><b>Shopping Cart</b></h4>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="row border-top border-bottom" *ngFor="let items of cartData">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="{{items.image}}"></div>
+                    <div class="col">
+                        <div class="row text-muted">{{items.category}}</div>
+                        <div class="row">{{items.name}}</div>
+                    </div>
+                    <div class="col">
+                        <!-- <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> -->
+                        <div class="pt-4">
+
+                            <div class="text-center pb-4"> <span>x</span>{{items.quantity}} </div>
+
+                            <!-- <button class="decrease rounded-start">-</button>
+                            <input type="text" value="1" class="count-value  w-25 " />
+                            <button class="increase rounded-end">+</button> -->
+                        </div>
+
+
+                    </div>
+                    <div class="col">{{items.price | currency :"INR"}}<span class="close"></span></div>
+                    <div class="col" (click)="removeToCart(items.id)"><span><i class="fa fa-trash" aria-hidden="true"></i></span></div>
+                </div>
+            </div>
+            <div class="back-to-shop"><a href="#"><i class="fa fa-long-arrow-left "></i></a><span
+                    class="text-muted">Back to shop</span></div>
+        </div>
+        <div class="col-md-4 summary">
+            <div>
+                <h5 class="text-center"><b>Summary</b></h5>
+            </div>
+            <hr>
+            <div class="row mb-2">
+                <div class="col" style="padding-left:0;">Amount </div>
+                <div class="col text-right">{{priceSummary.price| currency:"INR"}}</div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col" style="padding-left:0;">Tax</div>
+                <div class="col text-right">{{priceSummary.tax | currency:"INR"}}</div>
+            </div>
+            <div class="row mb-2">
+                <div class="col" style="padding-left:0;">Delivery</div>
+                <div class="col text-right">{{priceSummary.delivery | currency:"INR"}}</div>
+            </div>
+            <div class="row mb-3 ">
+                <div class="col" style="padding-left:0;">Discount</div>
+                <div class="col text-right">{{priceSummary.discount | currency:"INR"}}</div>
+            </div>
+
+            <div class="row fw-bolder border " style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                <h5 class="col" style="padding-left:0;">Total</h5>
+                <h5 class="col text-right">{{priceSummary.total | currency : "INR"}}</h5>
+            </div>
+            <button class="btn rounded">CHECKOUT</button>
+        </div>
+    </div>
+
+</div>

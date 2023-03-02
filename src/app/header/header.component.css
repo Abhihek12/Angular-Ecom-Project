@@ -1,0 +1,15 @@
+.suggested-result{
+ 
+      list-style: none; 
+    position: absolute;
+    display: list-item;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.235);
+    width: 38.3%;
+    margin-top: 45px;
+    border-radius: 5px;
+    
+}
+
+
+

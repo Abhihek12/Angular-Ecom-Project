@@ -1,0 +1,86 @@
+<div class="container" *ngIf="productDetail">
+
+
+    <div class="row p-5 shadow rounded-4">
+
+        <div class="col-lg-5 col-sm-12 text-center  ">
+            <div class="image_selected"><img class="img-fluid img-ld" src="{{productDetail.image}}" alt="">
+            </div>
+        </div>
+
+        <div class="col-lg-7 col-sm-0 ">
+
+            <div class="product_description">
+
+                <div class="product_name">
+                    <h1 class="fw-bolder">{{productDetail.name | titlecase}}</h1>
+                </div>
+
+                <div class="mt-3"> <span class="product_price">
+                        <h4><span>Price : </span> <span class="bg-warning p-2 rounded-pill">{{productDetail.price |
+                                currency : "INR"}}</span></h4>
+                    </span> </div>
+
+                <div class="mt-3"> <span class="product_price">
+                        <h4><span>Color : </span> <span>{{productDetail.color | titlecase}}</span> </h4>
+                    </span> </div>
+                <div class="mt-3"> <span class="product_price">
+                        <h4><span>Category : </span> <span>{{productDetail.category | titlecase}}</span> </h4>
+                    </span> </div>
+
+
+            </div>
+            <hr class="singleline">
+            <div>
+                <span>{{productDetail.description}}</span>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="br-dashed">
+                            <div class="row">
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7"> </div>
+                </div>
+                <!-- <div class="row" style="margin-top: 15px;">
+                    <div class="col-xs-6" style="margin-left: 15px;"> <span class="product_options">RAM
+                            Options</span><br> <button class="btn btn-primary btn-sm">4 GB</button> <button
+                            class="btn btn-primary btn-sm">8 GB</button> <button
+                            class="btn btn-primary btn-sm">16 GB</button> </div>
+                    <div class="col-xs-6" style="margin-left: 55px;"> <span class="product_options">Storage
+                            Options</span><br> <button class="btn btn-primary btn-sm">500 GB</button>
+                        <button class="btn btn-primary btn-sm">1 TB</button> </div>
+                </div> -->
+            </div>
+            <hr class="singleline">
+            <div class="order_info d-flex flex-row"></div>
+
+            <div class="product-number-increase ">
+
+
+
+                <div class="product-counter pb-3 ">
+                    <button class="decrease rounded-start" (click)="handelQuentity('min')">-</button>
+
+                    <input type="text" value="{{productQuentity}}" class="count-value  w-25" />
+                    <button class="increase rounded-end" (click)="handelQuentity('plus')">+</button>
+
+                </div>
+
+                <div class="col-xs-6  gap-2 d-flex">
+                    <button *ngIf="!removeCart" type="button" class="btn btn-primary shop-button" (click)="AddToCart()">Add to Cart</button>
+                    <button *ngIf="removeCart" type="button" class="btn btn-primary shop-button" (click)="RemoveToCart(productDetail.id)">Remove to Cart</button>
+                    <button type="button" class="btn btn-success shop-button">Buy Now</button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>

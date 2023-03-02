@@ -1,0 +1,82 @@
+<!-- Switch case is use to hide the menu of home and show the menu of Seller and vice versa -->
+
+
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="navbar-brand">
+      <!-- <img id="logo"
+                src="./img/logo2.png" height="80vh"
+                alt="Leaf"> -->
+      <h1 class="fw-bolder"><a class="text-decoration-none text-danger" routerLink="/">Ecom</a></h1>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+    <div [ngSwitch]="menutype" class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      
+        <form *ngIf="menutype!=='Seller'" class="d-flex ms-auto   w-50" role="search">
+          <input #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()" class="form-control   me-2 p-2 "
+            type="search" placeholder="Search" aria-label="Search">
+          <button (click)="submitSearch(searchInput.value)" class="btn btn-outline-success  "
+            type="submit">Search</button>
+  
+          <ul class="list-unstyled" class="suggested-result" *ngIf="serachResult">
+            <li class="list-unstyled p-1 " *ngFor="let item of serachResult">
+              <a class="text-decoration-none " (mousedown)="redirectToDetails(item.id )">{{item.name | titlecase}}</a>
+  
+  
+  
+            </li>
+          </ul>
+        </form>
+  
+
+
+
+
+
+      <!-- home page -->
+      <ul *ngSwitchCase="'Default'" class="navbar-nav gap-3 ms-auto my-auto ">
+        <li class="nav-item"><a routerLink="Home" class="nav-link"><Strong>Home</Strong></a></li>
+        <li class="nav-item"><a routerLink="seller-auth" class="nav-link"><strong>Seller</strong></a></li>
+        <li class="nav-item"><a routerLink="user-auth" class="nav-link"><strong>Login/Signup</strong></a></li>
+        <li class="nav-item"><a routerLink="#" class="nav-link"><strong>Cart({{cartItems}})</strong></a></li>
+        <!-- <li class="nav-item  " ><a href="#" class="nav-link"><img src="./img/moon.png" id="icon" height="30px"  alt="dark mood"></a></li> -->
+
+      </ul>
+
+
+      <!-- user navBar -->
+      <ul *ngSwitchCase="'user'" class="navbar-nav gap-3 ms-auto my-auto ">
+        <li class="nav-item"><a routerLink="Home" class="nav-link"><Strong>Home</Strong></a></li>
+        <li class="nav-item"><a routerLink="seller-auth" class="nav-link"><strong>Seller</strong></a></li>
+        <li class="nav-item"><a routerLink="user-auth" class="nav-link"><strong>{{userNmae | titlecase}}</strong></a></li>
+        <li class="nav-item"><a (click)="userLogout()" class="nav-link"><strong>Logout</strong></a></li>
+        <li class="nav-item"><a [routerLink]="cartItems>0?'cart':null" class="nav-link"><strong>Cart({{cartItems}})</strong></a></li>
+        <!-- <li class="nav-item  " ><a href="#" class="nav-link"><img src="./img/moon.png" id="icon" height="30px"  alt="dark mood"></a></li> -->
+
+      </ul>
+
+
+
+
+
+      <!-- Seller navbar -->
+
+      <ul *ngSwitchCase="'Seller'" class="navbar-nav gap-3 ms-auto my-auto ">
+        <li class="nav-item"><a routerLink="seller-add-product" class="nav-link"><Strong>Add Product</Strong></a></li>
+        <li class="nav-item"><a routerLink="seller-home" class="nav-link"><strong>List</strong></a></li>
+        <li class="nav-item"><a (click)="logout()" class="nav-link"><strong>Log Out</strong></a></li>
+        <li class="nav-item"><a href="#" class="nav-link"><strong>{{sellername | titlecase}}</strong></a></li>
+        <!-- <li class="nav-item  " ><a href="#" class="nav-link"><img src="./img/moon.png" id="icon" height="30px"  alt="dark mood"></a></li> -->
+
+      </ul>
+
+
+
+
+
+    </div>
+  </nav>
+</div>

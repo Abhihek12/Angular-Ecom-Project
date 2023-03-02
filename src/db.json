@@ -1,0 +1,139 @@
+{
+  "Seller": [
+    {
+      "name": "Abhishek Singh",
+      "email": "abhi@gmail.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "Vivek Singh",
+      "email": "vivek@gmail.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "Abhishek Singh",
+      "email": "sabjishoot@gmail.com",
+      "password": "1234",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Puma Shoes",
+      "price": "100000",
+      "color": "back",
+      "category": "shoes",
+      "description": "coll shoes with good grip and have comfirtable sole \n",
+      "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/376151/02/sv01/fnd/IND/fmt/png/Fuse-2.0-Men's-Training-Shoes"
+    },
+    {
+      "id": 5,
+      "name": "Nike Air Force 1 Mid '07 LX",
+      "price": " 1279500",
+      "color": "Brown",
+      "category": "shoes",
+      "description": "Colour Shown: Pale Ivory/Gum Medium Brown/Brown\nStyle: DV0792-100",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4cc0229f-6476-482e-bd73-0461ec464f7f/react-infinity-3-road-running-shoes-1W741N.png"
+    },
+    {
+      "name": "SUPERNOVA 2 RUNNING SHOES",
+      "price": "4999",
+      "color": "white",
+      "category": "Shoes",
+      "description": "COMFORT MEETS ENERGY\nThe precisely balanced mix of Bounce and increased Boost in the midsole delivers comfort and energy return.",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6af568b6b29940fea695ae2901800698_9366/Supernova_2_Running_Shoes_White_GW9100_01_standard.jpg",
+      "id": 6
+    },
+    {
+      "name": "ADIDAS 4DFWD_PULSE SHOES",
+      "price": "7999",
+      "color": "black & orange",
+      "category": "shoes",
+      "description": "Lace closure\nMesh upper\nadidas 4D midsole\nTextile lining\nMidsole drop: 11 mm (heel: 30 mm / forefoot: 19 mm)\nStretchweb rubber outsole\nUpper contains a minimum of 50% recycled content\nColor: Shadow Navy / Silver Metallic / Turbo\nProduct code: GX2986",
+      "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fb4f7791036b4b9d90a0ad6500f49c2a_9366/adidas_4DFWD_Pulse_Shoes_Blue_GX2986_01_standard.jpg",
+      "id": 7
+    },
+    {
+      "name": "APPLE iPhone 12 mini (White, 128 GB)",
+      "price": "45599",
+      "color": "white",
+      "category": "mobile",
+      "description": "128 GB ROM\n13.72 cm (5.4 inch) Super Retina XDR Display\n12MP + 12MP | 12MP Front Camera\nA14 Bionic Chip with Next Generation Neural Engine Processor\nCeramic Shield\nIndustry-leading IP68 Water Resistance\nAll Screen OLED Display\n12MP TrueDepth Front Camera with Night Mode, 4K Dolby Vision HDR Recording",
+      "image": "https://rukminim1.flixcart.com/image/832/832/kg8avm80/mobile/d/g/b/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfhx4cfzue.jpeg?q=70",
+      "id": 8
+    },
+    {
+      "name": "ASUS VivoBook 15 (2022)",
+      "price": "52399",
+      "color": "silver",
+      "category": "LAptop",
+      "description": "ASUS VivoBook 15 (2022) Core i3 10th Gen - (8 GB/512 GB SSD/Windows 11 Home) X515JA-EJ362WS | X515JA-EJ392WS Thin and Light Laptop  (15.6 inch, Transparent Silver, 1.80 kg, With MS Office)",
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/computer/e/1/7/-original-imag3ebnzawky4kn.jpeg?q=70",
+      "id": 9
+    },
+    {
+      "name": "ASUS TUF Gaming A17 ",
+      "price": "52990",
+      "color": "black",
+      "category": "Laptop",
+      "description": "ASUS TUF Gaming A17 with 90Whr Battery Ryzen 5 Hexa Core AMD R5-4600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/144 Hz) FA706IHRB-HX041W Gaming Laptop  (17.3 Inch, Graphite Black, 2.60 Kg)",
+      "image": "https://rukminim1.flixcart.com/image/832/832/l3rmzrk0/computer/z/2/c/-original-imagetjyhhtrtkdg.jpeg?q=70",
+      "id": 10
+    },
+    {
+      "name": "Men Printed Round Neck White T-Shirt",
+      "price": "700",
+      "color": "white-printed",
+      "category": "t-shirt",
+      "description": "For Plus customers, shipping charges are free.\nFor non-Plus customers, if the total value of FAssured items is more than Rs.500, shipping charges are free. If the total value of FAssured items is less than Rs.500, shipping charges = Rs.40 per unit\n* For faster delivery, shipping charges will be applicable.",
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/t-shirt/x/j/5/xs-bwtrnful-z55-blive-original-imaggvyuc8emdn9g.jpeg?q=70",
+      "id": 11
+    },
+    {
+      "name": "LG UQ7500",
+      "price": "65000",
+      "color": "multicolor",
+      "category": "TV",
+      "description": "Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube\nOperating System: WebOS\nResolution: Ultra HD (4K) 3840 x 2160 Pixels\nSound Output: 20 W\nRefresh Rate: 60 Hz\nEasy Payment Options\nNo cost EMI starting from ₹6,666/month\nFlipkart Pay Later\nDebit / Flipkart EMI available\nNet banking & Credit/ Debit/ ATM card",
+      "image": "https://rukminim1.flixcart.com/image/832/832/xif0q/television/n/h/y/-original-imagg24zpbk2h7tx.jpeg?q=70",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "name": "Abhishek",
+      "email": "abhishekasingh25@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": " Vivek Singh",
+      "email": "vivek@gmail.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "name": "Sakshi Singh",
+      "email": "sakshi@gmail.com",
+      "password": "123",
+      "id": 8
+    }
+  ],
+  "cart": [
+    {
+      "name": "Nike Air Force 1 Mid '07 LX",
+      "price": " 1279500",
+      "color": "Brown",
+      "category": "shoes",
+      "description": "Colour Shown: Pale Ivory/Gum Medium Brown/Brown\nStyle: DV0792-100",
+      "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4cc0229f-6476-482e-bd73-0461ec464f7f/react-infinity-3-road-running-shoes-1W741N.png",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 5,
+      "id": 1
+    }
+  ]
+}
